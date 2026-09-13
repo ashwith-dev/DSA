@@ -18,10 +18,9 @@ var topKFrequent = function(nums, k) {
                 key1 = key
             }
         }
-        if(!arr.includes(key1)){
-            arr.push(key1)
-            list.set(key1,0)
-        } 
+        arr.push(key1)
+        list.set(key1,0)
+         
     }
     return arr
 };
