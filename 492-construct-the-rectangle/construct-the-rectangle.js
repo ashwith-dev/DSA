@@ -4,8 +4,8 @@
  */
 var constructRectangle = function(area) {
     let w = Math.floor(Math.sqrt(area))
-    for(let i=w; i>0; i--){
-        let l = area/i
-        if(l==Math.floor(l)) return [l,i]
+    while(area%w !=0){
+        w--
     }
+    return [area/w,w]
 };
